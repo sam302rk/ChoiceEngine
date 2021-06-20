@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 #include "ChoiceEngine.h"
 
 namespace choice_engine
@@ -6,13 +9,14 @@ namespace choice_engine
 	{
 	private:
 		implementation* impl_;
-		char* chapter_;
-		char* working_dir_;
+		string chapter_;
+		string working_dir_;
+		string current_dialog_element_;
 		
 	public:
-		engine_impl(char* working_dir, char* initial_chapter, implementation* impl) : engine(working_dir, initial_chapter, impl)
+		engine_impl(string working_dir, string initial_chapter, implementation* impl) : engine(working_dir, initial_chapter, impl)
 		{
-			this->impl_ = impl; this->working_dir_ = working_dir; this->chapter_ = initial_chapter;
+			this->impl_ = impl; this->working_dir_ = working_dir; this->chapter_ = initial_chapter; this->current_dialog_element_ = "_main_";
 			get_implementation()->on_chapter_start_event(this->chapter_);
 		}
 		
@@ -21,7 +25,7 @@ namespace choice_engine
 			// TODO: Actually handle input
 		}
 		
-		void load_chapter(char* chapter) override
+		void load_chapter(string chapter) override
 		{
 			get_implementation()->on_chapter_end_event(this->chapter_);
 			get_implementation()->on_loading_start_event();
@@ -32,7 +36,7 @@ namespace choice_engine
 		}
 
 		implementation* get_implementation() override { return impl_; }
-		char* get_chapter() override { return chapter_; }
-		char* get_working_dir() override { return working_dir_; }
+		string get_chapter() override { return chapter_; }
+		string get_working_dir() override { return working_dir_; }
 	};
 }
