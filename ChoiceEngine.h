@@ -1,11 +1,14 @@
 #pragma once
+#include <string>
+using namespace std;
+
 namespace choice_engine
 {	
 	class object {};
 
 	class chapter : public object {
 	private:
-		string name_;
+		std::string name_;
 		string subtitle_;
 		bool visible_;
 

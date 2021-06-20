@@ -1,7 +1,6 @@
+#include "ChoiceEngine.h"
 #include <iostream>
 using namespace std;
-
-#include "ChoiceEngine.h"
 
 namespace choice_engine
 {
