@@ -1,0 +1,3 @@
+author=NPC
+text=Hello Player
+options=[option1|option2|option3]
