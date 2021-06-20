@@ -2,8 +2,6 @@
 Logic Engine for text-based Story games like [Emily is Away](https://store.steampowered.com/app/417860/Emily_is_Away/) or [Doki Doki Literature Club](https://ddlc.plus/)
 
 ## Plans for the future
-- API
-    - [ ] C++
 - API Wrappers
     - [ ] Node.js
     - [ ] C#
