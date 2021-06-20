@@ -15,6 +15,11 @@ Logic Engine for text-based Story games like [Emily is Away](https://store.steam
     - [ ] Unreal Engine
     - [ ] Godot
 
+## Build
+The ChoiceEngine can be build with any compiler, because it doesn't use any dependencies.<br>
+Building isn't required anyways, because the source files should be moved directly into your game and then get compiled as a part of your game.<br>
+For more informations, visit the [installation instructions](#Install).
+
 ## Install
 - Get the latest release [here](https://github.com/GamingCrafthd/ChoiceEngine/releases)
 - Move the `*.cpp` File and the `*.h` File into your codebase.
