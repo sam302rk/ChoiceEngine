@@ -15,6 +15,30 @@ Engine for Text-based Story games like [Emily is Away](https://store.steampowere
     - [ ] Unreal Engine
     - [ ] Godot
 
+## Install
+- Get the latest release [here](https://github.com/GamingCrafthd/ChoiceEngine/releases)
+- Move the `*.cpp` File and the `*.h` File into your codebase.
+- Import using 
+  ```cpp
+  #include "ChoiceEngine.h"
+  #include "ChoiceEngine.cpp"
+  ```
+- Create a implementation<br>
+  **Example:**
+  ```cpp
+  namespace your_game
+  {
+    class ce_impl : public implementation
+    {
+    public:
+        void on_..._event(...) override
+        {
+        // ...
+        }
+    }
+  }
+  ```
+
 ## Basic Concept
 A folder represents a dialog element being a dialog option or dialog by a npc.<br>
 A dialog element has all elements comming after that inside it (a basic folder hirachy)<br>
