@@ -38,6 +38,14 @@ Engine for Text-based Story games like [Emily is Away](https://store.steampowere
     }
   }
   ```
+  **Note** This is only pseudo code. Please don't copy&paste.
+- Start engine
+  ```cpp
+  int main() {
+    choice_engine::engine ce_instance = choice_engine::engine_impl(..., ..., your_game::ce_impl);
+  }
+  ```
+  **Note** This is only pseudo code. Please don't copy&paste.
 
 ## Basic Concept
 A folder represents a dialog element being a dialog option or dialog by a npc.<br>
