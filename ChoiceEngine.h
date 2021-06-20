@@ -2,7 +2,25 @@
 namespace choice_engine
 {	
 	class object {};
-	class chapter : public object {};			// TODO: Dummy for now
+
+	class chapter : public object {
+	private:
+		string name_;
+		string subtitle_;
+		bool visible_;
+
+	public:
+		chapter(string name, string subtitle, bool visible) {
+			this->name_ = name;
+			this->subtitle_ = subtitle;
+			this->visible_ = visible;
+		};
+
+		string get_name() { return name_; }
+		string get_subtitle() { return subtitle_; }
+		bool is_visible() { return visible_; }
+	};
+
 	class dialog_element : public object {};	// TODO: Dummy for now
 
 	class implementation
