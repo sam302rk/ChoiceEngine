@@ -1,4 +1,4 @@
-# [ChoiceEngine](https://github.com/GamingCrafthd/ChoiceEngine/releases)
+# [ChoiceEngine](https://github.com/GamingCrafthd/ChoiceEngine/releases) - [Wiki](https://github.com/GamingCrafthd/ChoiceEngine/wiki)
 Logic Engine for games with dialog and advanced story games.
 
 ## Planned Wrappers and ports
@@ -16,40 +16,6 @@ Logic Engine for games with dialog and advanced story games.
 - [ ] Story Editor (w/ nodes)
 - [ ] *.ce File Editor
 - [ ] Tech-demo
-
-## How to Build
-The ChoiceEngine can be build with any compiler, because it doesn't use any dependencies.<br>
-Building isn't required anyways, because the source files should be moved directly into your game and then get compiled as a part of your game.<br>
-For more informations, visit the [installation instructions](#Install).
-
-## How to Install
-- Get the latest release [here](https://github.com/GamingCrafthd/ChoiceEngine/releases)
-- Move the `*.cpp` File and the `*.h` File into your codebase.
-- Import using 
-  ```cpp
-  #include "ChoiceEngine.h"
-  #include "ChoiceEngine.cpp"
-  ```
-- Create a implementation<br>
-  **Example:**
-  ```cpp
-  namespace your_game
-  {
-    class engine_impl : public implementation
-    {
-      // TODO: Implement all events and file managment functions.
-      //       For more informations, visit the wiki.
-    }
-  }
-  ```
-  **Note** This is only pseudo code. Please don't copy&paste.
-- Start engine
-  ```cpp
-  int main() {
-    choice_engine::engine ce_instance = choice_engine::engine_impl(..., ..., your_game::ce_impl);
-  }
-  ```
-  **Note** This is only pseudo code. Please don't copy&paste.
 
 ## Basic Concept
 A folder represents a dialog element being a dialog option or dialog by a npc.<br>
