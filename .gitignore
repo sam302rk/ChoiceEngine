@@ -1,7 +1,7 @@
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
-
+*.sln
 
 # Created by https://www.toptal.com/developers/gitignore/api/c++,visualstudio,visualstudiocode,clion+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,visualstudio,visualstudiocode,clion+all
