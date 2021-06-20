@@ -21,7 +21,23 @@ namespace choice_engine
 		bool is_visible() { return visible_; }
 	};
 
-	class dialog_element : public object {};	// TODO: Dummy for now
+	class dialog_element : public object {
+	private:
+		string author_;
+		string text_;
+		string options_[];
+
+	public:
+		dialog_element(string author, string text, string options[]) {
+			this->author_ = author;
+			this->text_ = text;
+			*this->options_ = *options;
+		}
+
+		string get_author() { return author_;  }
+		string get_text() { return text_; }
+		string* get_options() { return options_; }
+	};
 
 	class implementation
 	{
