@@ -19,9 +19,9 @@ namespace choice_engine
 			this->visible_ = visible;
 		};
 
-		string get_name() { return name_; }
-		string get_subtitle() { return subtitle_; }
-		bool is_visible() { return visible_; }
+		string get_name() const { return name_; }
+		string get_subtitle() const { return subtitle_; }
+		bool is_visible() const { return visible_; }
 	};
 
 	class dialog_element : public object {
@@ -37,9 +37,9 @@ namespace choice_engine
 			*this->options_ = *options;
 		}
 
-		string get_author() { return author_;  }
-		string get_text() { return text_; }
-		string* get_options() { return options_; }
+		string get_author() const { return author_;  }
+		string get_text() const { return text_; }
+		const string* get_options() const { return options_; }
 	};
 
 	class implementation

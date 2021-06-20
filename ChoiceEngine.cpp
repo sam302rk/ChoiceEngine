@@ -40,6 +40,7 @@ namespace choice_engine
 
 		object parse_file(string* content) override {
 			// TODO
+			return object();
 		}
 	};
 }
