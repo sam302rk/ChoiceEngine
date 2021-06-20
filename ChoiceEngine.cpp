@@ -38,5 +38,9 @@ namespace choice_engine
 		implementation* get_implementation() override { return impl_; }
 		string get_chapter() override { return chapter_; }
 		string get_working_dir() override { return working_dir_; }
+
+		object parse_file(string* content) override {
+			// TODO
+		}
 	};
 }
