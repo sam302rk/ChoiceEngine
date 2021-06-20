@@ -52,9 +52,9 @@ namespace choice_engine
 			virtual void on_loading_end_event();									// Loading screen can be hidden, at least the engine is done loading
 			
 			// File Managment
-			virtual string load_file(string file_name);							// Load file
-			virtual void override_file(string file_name, string content);		// Override file (File's content should become content)
-			virtual void append_to_file(string file_name, string content);		// Append to file (File's content should be old content + new content)
+			virtual string* load_file(string file_name);							// Load file
+			virtual void override_file(string file_name, string* content);			// Override file (File's content should become content)
+			virtual void append_to_file(string file_name, string* content);			// Append to file (File's content should be old content + new content)
 	};
 
 	class engine
@@ -66,6 +66,6 @@ namespace choice_engine
 			virtual implementation* get_implementation();							// Gets instance of engine implementation
 			virtual string get_chapter();											// Gets current chapter
 			virtual string get_working_dir();										// Gets working directory
-			virtual object parse_file(string textToParse);							// Parse *.ce file to CE objects
+			virtual object parse_file(string* textToParse);							// Parse *.ce file to CE objects
 	};
 }
