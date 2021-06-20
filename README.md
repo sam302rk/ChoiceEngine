@@ -1,17 +1,20 @@
 # [ChoiceEngine](https://github.com/GamingCrafthd/ChoiceEngine/releases)
 Logic Engine for text-based Story games like [Emily is Away](https://store.steampowered.com/app/417860/Emily_is_Away/) or [Doki Doki Literature Club](https://ddlc.plus/)
 
-## Plans for the future
+## Planned Wrappers and ports
 - API Wrappers
     - [ ] Node.js
     - [ ] C#
     - [ ] Python
     - [ ] Java
-- [ ] Editor
 - Direct Game Engine Ports
     - [ ] Unity
     - [ ] Unreal Engine
     - [ ] Godot
+
+## Future ideas
+- [ ] Story Editor (w/ nodes)
+- [ ] Tech-demo
 
 ## Build
 The ChoiceEngine can be build with any compiler, because it doesn't use any dependencies.<br>
