@@ -14,6 +14,7 @@ Logic Engine for games with dialog and advanced story games.
 
 ## Future ideas
 - [ ] Story Editor (w/ nodes)
+- [ ] *.ce File Editor
 - [ ] Tech-demo
 
 ## Build
