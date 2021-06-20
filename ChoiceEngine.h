@@ -55,9 +55,9 @@ namespace choice_engine
 			virtual void on_loading_end_event();									// Loading screen can be hidden, at least the engine is done loading.
 			
 			// File Management
-			virtual string* load_file(string file_name);							// Load file
-			virtual void override_file(string file_name, string* content);			// Override file (File's content should become content)
-			virtual void append_to_file(string file_name, string* content);			// Append to file (File's content should be old content + new content)
+			virtual string* load_file(string file_name);							// Gets called by the engine to read files.
+			virtual void override_file(string file_name, string* content);			// Gets called by the engine to override files or create new files.
+			virtual void append_to_file(string file_name, string* content);			// Gets called by the engine to append to existing files.
 	};
 
 	class engine
