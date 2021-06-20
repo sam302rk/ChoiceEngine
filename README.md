@@ -35,13 +35,10 @@ For more informations, visit the [installation instructions](#Install).
   ```cpp
   namespace your_game
   {
-    class ce_impl : public implementation
+    class engine_impl : public implementation
     {
-    public:
-        void on_..._event(...) override
-        {
-        // ...
-        }
+      // TODO: Implement all events and file managment functions.
+      //       For more informations, visit the wiki.
     }
   }
   ```
