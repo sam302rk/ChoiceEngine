@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice Engine - Online .ce Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="vertical-menu">
+        <a class="active">Choice Engine</a>
+        <a href="#" id="add-file"><em class="bi bi-file-earmark-plus"></em></a>
+        <a href="#" id="remove-file"><em class="bi bi-file-earmark-minus"></em></a>
+        <a href="#" id="run"><em class="bi bi-caret-right"></em></a>
+    </div>
+    <div class="body">
+        <h2 id="dialogstitle">Test</h2>
+        <div id="dialogs">
+            <div class="window">
+                <select>
+                    <option>Chapter</option>
+                    <option>Dialog</option>
+                </select>
+
+                <div id="Chapter">
+                    <input type="text">
+                    <input type="text">
+                    <input type="checkbox">
+                </div>
+
+                <div id="Dialog">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="filestitle"><code>*.ce</code> Files</h2>
+        <div id="results">
+
+        </div>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
