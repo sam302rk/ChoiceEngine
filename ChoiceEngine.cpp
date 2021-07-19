@@ -24,7 +24,7 @@ namespace choice_engine
 			// TODO: Actually handle input
 		}
 		
-		void load_chapter(string chapter) override
+		void load_chapter(const string chapter) override
 		{
 			get_implementation()->on_chapter_end_event(this->chapter_);
 			get_implementation()->on_loading_start_event();
