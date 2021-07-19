@@ -13,7 +13,7 @@ namespace choice_engine
 		string current_dialog_element_;
 		
 	public:
-		engine_impl(string working_dir, string initial_chapter, implementation* impl) : engine(working_dir, initial_chapter, impl)
+		engine_impl(const string& working_dir, const string& initial_chapter, implementation* impl) : engine(working_dir, initial_chapter, impl)
 		{
 			this->impl_ = impl; this->working_dir_ = working_dir; this->chapter_ = initial_chapter; this->current_dialog_element_ = "_main_";
 			get_implementation()->on_chapter_start_event(this->chapter_);
