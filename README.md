@@ -1,5 +1,9 @@
-# [ChoiceEngine](https://github.com/GamingCrafthd/ChoiceEngine/releases) - [Wiki](https://github.com/GamingCrafthd/ChoiceEngine/wiki)
+﻿# [ChoiceEngine](https://github.com/GamingCrafthd/ChoiceEngine/releases) - [Wiki](https://github.com/GamingCrafthd/ChoiceEngine/wiki)
 Logic Engine for games with dialog and advanced story games.
+
+**⚠️ EXPERIMENTAL BRANCH ⚠️**<br>
+This branch is a unstable rewrite.<br>
+It may be merged into main or may be discarded.
 
 ## Goals
 - [ ] First stable builds.
