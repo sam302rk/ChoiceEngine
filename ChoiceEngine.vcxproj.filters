@@ -9,19 +9,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ChoiceEngine.cpp">
-      <Filter>Source code</Filter>
-    </ClCompile>
-    <ClInclude Include="ChoiceEngine.h">
-      <Filter>Source code</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="README.md">
       <Filter>Important files</Filter>
     </None>
     <None Include=".gitignore">
       <Filter>Important files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h">
+      <Filter>Source code</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Source code</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrapper.h">
+      <Filter>Source code</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
