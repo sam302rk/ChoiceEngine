@@ -36,16 +36,17 @@ namespace choice_engine
 		/// Select Choice
 		/// </summary>
 		/// <param name="choice">The selected choice</param>
-		void add_choice(int choice)
+		void add_choice(const int& choice)
 		{
-			current_dialog_.append("/choice" + choice);
+			current_dialog_.append("/choice");
+			current_dialog_.append(std::to_string(choice));
 		}
 
 		/// <summary>
 		/// Load new chapter.
 		/// </summary>
 		/// <param name="chapter">The Chapter number starting at 0.</param>
-		void set_chapter(int chapter)
+		void set_chapter(const int chapter)
 		{
 			current_dialog_ = "chapter" + std::to_string(chapter);
 		}
@@ -54,7 +55,7 @@ namespace choice_engine
 		/// Overrides the current dialog path.
 		/// </summary>
 		/// <param name="path">New path for overriding.</param>
-		void set_choice(std::string path)
+		void set_choice(const std::string& path)
 		{
 			current_dialog_ = path;
 		}
