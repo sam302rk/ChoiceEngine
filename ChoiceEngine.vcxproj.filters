@@ -30,9 +30,4 @@
       <Filter>Source code</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Engine.cpp">
-      <Filter>Source code</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>

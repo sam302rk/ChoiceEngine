@@ -149,9 +149,6 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Wrapper.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Engine.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
