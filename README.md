@@ -5,6 +5,13 @@ Logic Engine for games with dialog and advanced story games.
 This branch is a unstable rewrite.<br>
 It may be merged into main or may be discarded.
 
+## Features
+- Fully documented
+- Fully customizable
+- Easy to setup
+- Platform independant
+- Fully open-source
+
 ## Goals
 - [ ] First stable builds.
 - [ ] Make ChoiceEngine ready for real games.
