@@ -30,7 +30,6 @@ It may be merged into main or may be discarded.
 
 ## Future ideas
 - [ ] Story Editor (w/ nodes)
-- [ ] *.ce File Editor
 - [ ] Tech-demo
 
 ## Basic Concept
