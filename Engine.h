@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 #include "Wrapper.h"
 #include "Game.h"
 
@@ -46,7 +47,7 @@ namespace choice_engine
 		/// <param name="chapter">The Chapter number starting at 0.</param>
 		void set_chapter(int chapter)
 		{
-			current_dialog_ = "chapter" + chapter;
+			current_dialog_ = "chapter" + std::to_string(chapter);
 		}
 		
 	};
