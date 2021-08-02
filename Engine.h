@@ -49,6 +49,15 @@ namespace choice_engine
 		{
 			current_dialog_ = "chapter" + std::to_string(chapter);
 		}
+
+		/// <summary>
+		/// Overrides the current dialog path.
+		/// </summary>
+		/// <param name="path">New path for overriding.</param>
+		void set_choice(std::string path)
+		{
+			current_dialog_ = path;
+		}
 		
 	};
 }
