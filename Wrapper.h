@@ -14,7 +14,7 @@ namespace choice_engine
 			/// </summary>
 			/// <param name="path">Path to the file.</param>
 			/// <returns>Every line of file as array</returns>
-			std::string* get_file(std::string path);
+			std::string* read_file(std::string path);
 		 
 			/// <summary>
 			/// Does this file/directory exist?
