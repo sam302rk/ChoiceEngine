@@ -99,6 +99,5 @@ namespace choice_engine
 			std::string* user_dialog = get_wrapper().read_file(path + "/user_dialog");
 			return new element(new dialog(dialog_file[0], dialog_file[1]), action_file, user_dialog);
 		}
-		
 	};
 }

@@ -7,7 +7,6 @@ namespace choice_engine
 	{
 		public:
 			dialog() = default;
-		
 			dialog(const std::string& param_npc, const std::string& param_text)
 			{
 				npc = param_npc;
@@ -22,7 +21,6 @@ namespace choice_engine
 		dialog* dialog_;
 		std::string* action_;
 		std::string* user_dialog_;
-
 		public:
 			element(dialog* dialog, std::string* action, std::string* user_dialog)
 			{
@@ -35,7 +33,6 @@ namespace choice_engine
 	class chapter : element
 	{
 		std::string* chapter_name_;
-
 		public:
 			chapter(dialog* dialog, std::string* action, std::string* user_dialog, std::string* chapter_name) : element(dialog, action, user_dialog)
 			{
