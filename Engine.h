@@ -84,9 +84,19 @@ namespace choice_engine
 		/// </summary>
 		element* load_current_element() const
 		{
-			std::string* dialog_file = get_wrapper().read_file(get_current_dialog() + "/dialog");
-			std::string* action_file = get_wrapper().read_file(get_current_dialog() + "/action");
-			std::string* user_dialog = get_wrapper().read_file(get_current_dialog() + "/user_dialog");
+			return load_element(get_current_dialog());
+		}
+
+		/// <summary>
+		/// Loads specified dialog element.
+		/// </summary>
+		/// <param name="path">The path to the specified element.</param>
+		/// <returns>Element of selected path.</returns>
+		element* load_element(const std::string& path) const
+		{
+			std::string* dialog_file = get_wrapper().read_file(path + "/dialog");
+			std::string* action_file = get_wrapper().read_file(path + "/action");
+			std::string* user_dialog = get_wrapper().read_file(path + "/user_dialog");
 			return new element(new dialog(dialog_file[0], dialog_file[1]), action_file, user_dialog);
 		}
 		
