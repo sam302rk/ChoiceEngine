@@ -67,9 +67,9 @@ namespace choice_engine
 		/// Checks if the path includes directories. This is useful because a chapter element can't have a "continue_to_next_chapter" action to prevent bad pratice.
 		/// </summary>
 		/// <returns>Is the current dialog the chapter root?</returns>
-		bool current_dialog_is_chapter()
+		bool current_dialog_is_chapter() const
 		{
-			return get_current_dialog().find("/");
+			return get_current_dialog().find('/');
 		}
 
 		/// <summary>
