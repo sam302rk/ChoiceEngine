@@ -33,7 +33,11 @@ namespace choice_engine
 		/// <returns>Returns the game itself.</returns>
 		game get_game() const { return game_; }
 
+		/// <returns>Returns the current dialog path.</returns>
 		std::string get_current_dialog() const { return current_dialog_; }
+		
+		/// <returns>Returns the current dialog element.</returns>
+		element* get_current_dialog_element() const { return current_dialog_element_; }
 
 		/// <summary>
 		/// Select Choice
@@ -43,6 +47,7 @@ namespace choice_engine
 		{
 			current_dialog_.append("/choice");
 			current_dialog_.append(std::to_string(choice));
+			current_dialog_element_ = load_current_element();
 		}
 
 		/// <summary>
@@ -52,6 +57,7 @@ namespace choice_engine
 		void set_chapter(const int chapter)
 		{
 			current_dialog_ = "chapter" + std::to_string(chapter);
+			current_dialog_element_ = load_current_element();
 		}
 
 		/// <summary>
@@ -61,10 +67,11 @@ namespace choice_engine
 		void set_choice(const std::string& path)
 		{
 			current_dialog_ = path;
+			current_dialog_element_ = load_current_element();
 		}
 
 		/// <summary>
-		/// Checks if the path includes directories. This is useful because a chapter element can't have a "continue_to_next_chapter" action to prevent bad pratice.
+		/// Checks if the path includes directories. This is useful because a chapter element can't have a "continue_to_next_chapter" action to prevent bad practice.
 		/// </summary>
 		/// <returns>Is the current dialog the chapter root?</returns>
 		bool current_dialog_is_chapter() const
