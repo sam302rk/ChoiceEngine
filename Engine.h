@@ -84,7 +84,9 @@ namespace choice_engine
 		/// </summary>
 		element* load_current_element() const
 		{
-			return load_element(get_current_dialog());
+			element* new_element = load_element(get_current_dialog());
+			get_game().on_new_element_event(new_element);
+			return new_element;
 		}
 
 		/// <summary>
