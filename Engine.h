@@ -75,7 +75,7 @@ namespace choice_engine
 		/// <summary>
 		/// Loads current dialog element.
 		/// </summary>
-		element* load_current_element()
+		element* load_current_element() const
 		{
 			std::string* dialog_file = get_wrapper().read_file(get_current_dialog() + "/dialog");
 			std::string* action_file = get_wrapper().read_file(get_current_dialog() + "/action");
