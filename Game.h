@@ -5,6 +5,7 @@ namespace choice_engine
 	class game
 	{
 		public:
-			void on_new_element_event(element* element);
+			virtual ~game() = default;
+			virtual void on_event(std::string event_name, std::string args...);
 	};
 }
