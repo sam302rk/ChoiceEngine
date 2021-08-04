@@ -26,7 +26,7 @@
     <ClInclude Include="Wrapper.h">
       <Filter>Source code</Filter>
     </ClInclude>
-    <ClInclude Include="Element.h">
+    <ClInclude Include="Nodes.h">
       <Filter>Source code</Filter>
     </ClInclude>
   </ItemGroup>
