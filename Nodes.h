@@ -100,9 +100,35 @@ namespace choice_engine
 			choices_ = choices;
 		}
 
+		std::string* get_ini_header() override
+		{
+			return new std::string("[CHOICE]");
+		}
+		
 		std::vector<dialog_choice*> get_choices() const
 		{
 			return choices_;
+		}
+	};
+
+	class event_trigger : node
+	{
+		std::string* event_name_;
+		
+	public:
+		explicit event_trigger(std::string* event_name) : node()
+		{
+			event_name_ = event_name;
+		}
+
+		std::string* get_ini_header() override
+		{
+			return new std::string("[TRIGGER_EVENT]");
+		}
+
+		std::string* get_event_name() const
+		{
+			return event_name_;
 		}
 	};
 }
